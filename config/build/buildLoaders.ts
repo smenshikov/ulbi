@@ -1,11 +1,16 @@
 import webpack from "webpack";
 
 export function buildLoaders() {
-    const typescriptLoader: webpack.RuleSetRule = {
-        test: /.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-    }
+  const cssLoader: webpack.RuleSetRule = {
+    test: /\.s[ac]ss$/i,
+    use: ["style-loader", "css-loader", "sass-loader"],
+  };
 
-    return [typescriptLoader]
+  const typescriptLoader: webpack.RuleSetRule = {
+    test: /.tsx?$/,
+    use: "ts-loader",
+    exclude: /node_modules/,
+  };
+
+  return [typescriptLoader, cssLoader];
 }
