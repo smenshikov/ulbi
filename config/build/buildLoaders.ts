@@ -38,5 +38,13 @@ export function buildLoaders(options: BuildOptions) {
     use: [{ loader: "file-loader" }],
   };
 
-  return [typescriptLoader, cssLoader, svgLoader, fileLoader];
+  const babelLoader: webpack.RuleSetRule = {
+    test: /\.(js|jsx|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: "babel-loader",
+    },
+  };
+
+  return [fileLoader, svgLoader, babelLoader, typescriptLoader, cssLoader];
 }
