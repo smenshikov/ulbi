@@ -1,13 +1,11 @@
-import { FC } from "react";
-import { useTranslation } from "react-i18next";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MainPage: FC = () => {
-  const { t } = useTranslation("main");
+  const { t } = useTranslation('main');
 
   return (
-    <>
-      <h1>{t("mainPage")}</h1>
-    </>
+    <h1>{t('mainPage')}</h1>
   );
 };
 
