@@ -1,3 +1,5 @@
 {
-  "changeLanguageButton": "English"
+  "changeLanguageButton": "English",
+  "errorPage": "Something went wrong",
+  "refreshPage": "Refresh page"
 }
