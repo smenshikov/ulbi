@@ -5,7 +5,6 @@ module.exports = {
     jest: true,
   },
   extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -35,7 +34,7 @@ module.exports = {
     'react/prop-types': 'off',
     'i18next/no-literal-string': [
       'error',
-      { markupOnly: true, ignoreAttribute: ['to', 'theme'] },
+      { markupOnly: true, ignoreAttribute: ['to', 'theme', 'data-testid'] },
     ],
     'max-len': ['error', { ignoreComments: true, code: 100 }],
   },
@@ -43,6 +42,14 @@ module.exports = {
     __IS_DEV__: true,
     VoidFunction: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
   // settings: {
   //   react: { verbose: 'detect' },
   // },
