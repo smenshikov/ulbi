@@ -1,6 +1,6 @@
 {
-  "changeLanguageButton": "English",
+  "language": "English",
+  "shortLanguage": "En",
   "errorPage": "Something went wrong",
-  "refreshPage": "Refresh page",
-  "sidebarButton": "Toggle"
+  "refreshPage": "Refresh page"
 }

@@ -1,6 +1,6 @@
 {
-  "changeLanguageButton": "Русский",
+  "language": "Русский",
+  "shortLanguage": "Ru",
   "errorPage": "Что-то пошло не так",
-  "refreshPage": "Обновить страницу",
-  "sidebarButton": "Переключить"
+  "refreshPage": "Обновить страницу"
 }

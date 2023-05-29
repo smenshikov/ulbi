@@ -18,7 +18,7 @@ export function buildLoaders(options: BuildOptions) {
           modules: {
             auto: (resPath: string) => resPath.includes('.module.'),
             localIdentName: options.isDev
-              ? '[path][name]__[local]--[hash:base64:4]'
+              ? '[path][name]__[local]'
               : '[hash:base64:8]',
           },
         },

@@ -37,7 +37,7 @@ module.exports = {
     'react/prop-types': 'off',
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
-      ignoreAttribute: ['to', 'theme', 'data-testid'],
+      ignoreAttribute: ['to', 'theme', 'data-testid', 'size'],
     }],
     'max-len': ['error', {
       ignoreComments: true,
