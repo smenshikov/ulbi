@@ -4,7 +4,7 @@ import styles from './button.module.scss';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
-  theme?: 'clear' | 'outline' | 'background' | 'backgroundInverted';
+  theme?: 'clear' | 'clearInverted' | 'outline' | 'background' | 'backgroundInverted';
   square?: boolean;
   size?: 'size_m' | 'size_l' | 'size_xl'
 }
