@@ -2,5 +2,6 @@
   "language": "English",
   "shortLanguage": "En",
   "errorPage": "Something went wrong",
-  "refreshPage": "Refresh page"
+  "refreshPage": "Refresh page",
+  "login": "Login"
 }

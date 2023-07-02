@@ -2,5 +2,6 @@
   "language": "Русский",
   "shortLanguage": "Ru",
   "errorPage": "Что-то пошло не так",
-  "refreshPage": "Обновить страницу"
+  "refreshPage": "Обновить страницу",
+  "login": "Войти"
 }
