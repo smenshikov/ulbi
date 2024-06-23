@@ -49,7 +49,7 @@ export const Modal: FC<ModalProps> = ({
       <div className={classNames(
         styles.modal,
         isOpen && styles.opened,
-        styles[theme],
+        theme,
         className,
       )}
       >
