@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 import { Portal } from 'shared/ui/portal/portal';
-import { useTheme } from 'app/providers/theme-provider';
 import styles from './modal.module.scss';
 
 interface ModalProps {
@@ -16,8 +15,6 @@ interface ModalProps {
 export const Modal: FC<ModalProps> = ({
   className, children, onClose, isOpen,
 }) => {
-  const { theme } = useTheme();
-
   const handleClose = useCallback(() => {
     if (onClose) {
       onClose();
@@ -49,7 +46,6 @@ export const Modal: FC<ModalProps> = ({
       <div className={classNames(
         styles.modal,
         isOpen && styles.opened,
-        theme,
         className,
       )}
       >
