@@ -3,5 +3,7 @@
   "shortLanguage": "En",
   "errorPage": "Something went wrong",
   "refreshPage": "Refresh page",
-  "login": "Login"
+  "login": "Login",
+  "addUsername": "Username",
+  "addPassword": "Password"
 }

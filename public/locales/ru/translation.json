@@ -3,5 +3,7 @@
   "shortLanguage": "Ru",
   "errorPage": "Что-то пошло не так",
   "refreshPage": "Обновить страницу",
-  "login": "Войти"
+  "login": "Войти",
+  "addUsername": "Логин",
+  "addPassword": "Пароль"
 }
